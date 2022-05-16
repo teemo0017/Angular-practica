@@ -1,0 +1,28 @@
+<div class="row "
+>
+  <!-- Inicia componente cuentas -->
+  <h1 class="underlined "> <img class="bg-logo perfil-logo" src="bower_components/img/logo.jpeg"> Consulta de cuentas para {{$ctrl.client.nombre}}</h1>
+  <div class="col-sm-3">
+    <label class="control-label" for="selectPaises">Seleccione la cuenta: </label>
+    <select   class="btn dropdown-toggle bs-placeholder btn-select ng-touched" ng-change="$ctrl.updateSelect()" ng-model="$ctrl.selectedItem">
+      <option value="">Seleccionar</option>
+      <option ng-repeat="account in $ctrl.client.accounts track by $index" value={{$index}}>
+        {{account.id}}
+      <option>
+    </select>
+  </div>
+  <!-- Finaliza componente cuentas -->
+  <!-- Inicia componente detalle de cuentas -->
+  <div class="col-sm-9 box box-main">
+    <h3 class="perfil" >Detalles para la cuenta ({{$ctrl.selectedAccount.id}})  </h3>
+      <table class="table financial">
+        <tbody>
+          <tr ng-repeat="(key, value) in $ctrl.selectedAccount">
+            <th>{{key | labelFilter}}</th>
+            <td>{{value}}</td>
+          </tr>
+        </tbody>
+      </table>
+  </div>
+</div>
+<!-- Finaliza componente detalle de cuentas -->

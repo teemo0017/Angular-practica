@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr" ng-app="AccountsApp">
+<head>
+  <meta charset="utf-8">
+  <title>Consulta de cuentas</title>
+  <!-- Inicia CSS -->
+  <link rel="stylesheet" href="css/main.css" type="text/css">
+  <!-- Inicia javascript externos -->
+  <script src="js/angular/angular.min.js" type="text/javascript"></script>
+  <!-- <script src="bower_components/jquery/dist/jquery.js" type="text/javascript"></script>
+  <script src="bower_components/framework-bg/dist/js/banco-general.js" type="text/javascript"></script> -->
+  <!-- Inicia modulos de angular -->
+  <script src="app.module.js"></script>
+  <script src="accounts-list/accounts-list.module.js" type="text/javascript"></script>
+  <script src="accounts-list/accounts-list.component.js" type="text/javascript"></script>
+  <script src="core/core.module.js"></script>
+  <script src="core/labelFilter/labelFilter.filter.js"></script>
+</head>
+<body>
+  <!-- Inicia componente de encabezado -->
+  <header class="bg-head-ux">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="bg-logo-container">
+          <a href="index.html"><img class="bg-logo" src="bower_components/img/logo.webp"></a>
+          
+        </div>
+        <h1 class="ux-title">  Consulta de cuentas del cliente {{$ctrl.client.nombre}} </h1>
+      </div>
+    </div>
+  </header>
+
+  
+  <!-- Finaliza componente de encabezado -->
+  <div class="container container-backg">
+      <accounts-list></accounts-list>
+      
+  </div>
+
+</body>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h4 class="footer-heading">Experiencia de Usuario · Banco Arodi</h4>
+        <p class="text">Programa A.R.O.D.I. | Experiencia de Usuario | Confidencial Banco Arodi. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</html>

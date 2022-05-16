@@ -1,0 +1,41 @@
+{
+  "name": "Fernando González",
+  "accounts" : [
+    {
+      "id": "04-12345",
+      "description": "Cuenta de ahorro 1",
+      "type": "AH",
+      "amount" : 556.35
+    },
+    {
+      "id": "04-56789",
+      "description": "Cuenta de ahorro 2",
+      "type": "AH",
+      "amount" : 847531.35
+    },
+    {
+      "id": "03-12345",
+      "description": "Cuenta de corriente 1",
+      "type": "CO",
+      "amount" : 835.35
+    },
+    {
+      "id": "03-5678",
+      "description": "Cuenta de corriente 2",
+      "type": "CO",
+      "amount" : 17500.35
+    },
+    {
+      "id": "04-98765",
+      "description": "Cuenta de Ahorro 3",
+      "type": "AH",
+      "amount" : 789.35
+    },
+    {
+      "id": "XD",
+      "description": "Cuenta de Ahorro 10",
+      "type": "AH",
+      "amount" : 10000
+    }
+  ]
+}
